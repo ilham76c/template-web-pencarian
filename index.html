@@ -2,23 +2,36 @@
 <html>
     <head>
         <title>Web Browser</title>        
-        <link rel="stylesheet" src="assets/style.css">
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-        <header>
-            <div class="search-bar">
-                <input type="text" placeholder="Search the web..">
-                <button type="submit"><i class="custom-icon"></i></button>
+        <header>            
+            <div class="search">
+                <img class="logo" src="assets/img/logo.png">
+                <div class="cari">                    
+                    <input type="text" placeholder="Search the web..">
+                    <button id="btn-search" type="submit"></button>
+                </div>
             </div>
         </header>
         <main>
             <div id="content">
-
+                <article class="card">
+                    <h2>Isi dari konten</h2>
+                </article>
+                
             </div>
             <aside>
-                
+                <article class="profile card">
+                    <header>
+                        <h2>Moh. Ilham Burhanuddin</h2>
+                    </header>
+                </article>
             </aside>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Create by &copy; ilham76c</p>
+        </footer>
+        <script src="assets/script.js"></script>
     </body>
 </html>

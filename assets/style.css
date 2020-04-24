@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    width: 400px;
+    
+    border-radius: 15px;
+    padding: 10px 20px;
+    /* margin: 30px 20px; */
+    border-style: none; 
+}
+
+button, input {
+    height: 50px;    
+}
+
+#btn-search {
+    background-color: white;
+    border-style: none;
+    border-radius: 20px;
+}
+#btn-search:hover {
+    background: url('./icon/search-bold.svg');
+    background-size: cover;
+}
+
+header {    
+    display: inline;          
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+main {
+    overflow: auto;
+    padding: 20px 40px;
+}
+
+footer {
+    background-color: rgb(47, 224, 255);        
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+#content {
+    width: 70%;        
+    background-color: chartreuse;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;    
+}
+.profile {
+    text-align: center;
+}
+
+.search {
+    background-color:rgb(255, 255, 255);
+    padding: 25px 40px;    
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(200, 200, 200, 0.5);
+}
+
+.logo {
+    margin: auto;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.cari {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(189, 204, 238);    
+    display: inline-block;
+    background-color: white;
+}
+.cari:hover {
+    /* box-shadow: 5px 5px 1px 2px #bed0ff; */
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+div.search button {
+    background: url('./icon/search-outline.svg');    
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    vertical-align: middle;
+    margin: 10px;
+    cursor: pointer;
+}
