@@ -1,105 +1,158 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
-input {
-    width: 400px;
-    
-    border-radius: 15px;
-    padding: 10px 20px;
-    /* margin: 30px 20px; */
-    border-style: none; 
+/* Body open */
+body {
+    /* background-color: rgb(245, 245, 245); */
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    background-color: rgb(240, 240, 240);
+}
+/* Body Close */
+
+/* Header Open */
+
+#input-search {    
+    border-radius: 15px;    
+    border-style: none;         
 }
 
-button, input {
+/* #btn-search, #input-search {
     height: 50px;    
-}
+} */
 
-#btn-search {
-    background-color: white;
-    border-style: none;
-    border-radius: 20px;
-}
 #btn-search:hover {
     background: url('./icon/search-bold.svg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-header {    
-    display: inline;          
+#btn-search {
+    background: url('./icon/search-outline.svg');    
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    background-repeat: no-repeat;    
+    background-size: cover;    
+    margin: auto;
+    cursor: pointer;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
+.logo {
+    
+    height: 70px;    
 }
+
+.bar {
+    background-color:rgb(255, 255, 255);
+    padding: 25px 40px;    
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(200, 200, 200, 0.5);    
+    display: inline-flex;    
+    width: 100%;
+}
+
+.search-bar {
+    display: inline-flex;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(189, 204, 238);            
+    padding: 10px 15px;
+    width: fit-content; 
+}
+
+.search-bar:hover {
+    /* box-shadow: 5px 5px 1px 2px #bed0ff; */
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+/* Header Close */
+
+
 
 main {
     overflow: auto;
-    padding: 20px 40px;
+    padding: 20px 60px;
+    
 }
 
+main h3, h4 {
+    margin: 0px;
+}
+
+#content {
+    float: left;    
+    width: 68%;            
+}
+
+aside {
+    float: right;
+    width: 28%;        
+}
+
+#content,
+aside {
+    background-color: rgb(255, 255, 255);
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;    
+}
+
+.profile header {
+    text-align: center;
+
+}
+.profile figure {
+    margin: auto;    
+}
+
+.profile img {
+    width: 80%;
+}
+
+
 footer {
-    background-color: rgb(47, 224, 255);        
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);        
     padding: 10px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(200, 200, 200, 0.5);       
 }
 
 footer p {
     text-align: center;
 }
 
-aside {
-    float: right;
-    width: 30%;
-}
-#content {
-    width: 70%;        
-    background-color: chartreuse;
-    float: left;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;    
-}
-.profile {
-    text-align: center;
+@media screen and (max-width: 550px) {
+    #content,
+    aside {
+        width: 100%;        
+    }
+    aside {        
+        margin-top: 20px;
+    }        
 }
 
-.search {
-    background-color:rgb(255, 255, 255);
-    padding: 25px 40px;    
-    border-bottom: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(200, 200, 200, 0.5);
+@media screen and (min-width: 750px) {
+    #input-search {
+        min-width: 300px;
+    }
 }
 
-.logo {
-    margin: auto;
-    height: 70px;
-    vertical-align: middle;
+@media screen and (min-width: 750px) {
+    #input-search {
+        min-width: 350px;
+    }
 }
 
-.cari {
-    border-radius: 20px;
-    border-style: solid;
-    border-color: rgb(189, 204, 238);    
-    display: inline-block;
-    background-color: white;
-}
-.cari:hover {
-    /* box-shadow: 5px 5px 1px 2px #bed0ff; */
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-}
-div.search button {
-    background: url('./icon/search-outline.svg');    
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    vertical-align: middle;
-    margin: 10px;
-    cursor: pointer;
+@media screen and (min-width: 1000px) {    
+    #input-search {
+        min-width: 400px;
+    }
 }
