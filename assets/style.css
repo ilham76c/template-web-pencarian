@@ -7,7 +7,7 @@ body {
     /* background-color: rgb(245, 245, 245); */
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
-    background-color: rgb(240, 240, 240);
+    background-color:rgba(245, 245, 245, 0.5);
 }
 /* Body Close */
 
@@ -51,7 +51,7 @@ body {
     border-bottom-style: solid;
     border-bottom-color: rgba(200, 200, 200, 0.5);    
     display: inline-flex;    
-    width: 100%;
+    width: 100%;    
 }
 
 .search-bar {
@@ -69,21 +69,35 @@ body {
 }
 /* Header Close */
 
-
-
 main {
     overflow: auto;
-    padding: 20px 60px;
-    
+    padding: 20px 60px;    
+    margin: 0;
 }
 
-main h3, h4 {
-    margin: 0px;
+h3 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
 }
 
 #content {
     float: left;    
-    width: 68%;            
+    width: 68%;         
+    display: flex;
+    flex-direction: column;        
+}
+
+#content > article {    
+    border: 1px rgba(200, 200, 200, 0.5);
+    border-style: groove;        
+    margin-bottom: 5px;
+    max-height: 200px;
 }
 
 aside {
@@ -116,7 +130,7 @@ aside {
 
 footer {
     bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: rgb(255, 255, 255);        
     padding: 10px;
@@ -156,3 +170,11 @@ footer p {
         min-width: 400px;
     }
 }
+
+tr td:nth-child(1), td:nth-child(2) { /* I don't think they are 0 based */
+    vertical-align: top;
+ }
+
+td {
+     padding: 3px 0;
+ }
