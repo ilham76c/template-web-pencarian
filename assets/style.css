@@ -18,10 +18,6 @@ body {
     border-style: none;         
 }
 
-/* #btn-search, #input-search {
-    height: 50px;    
-} */
-
 #btn-search:hover {
     background: url('./icon/search-bold.svg');
     background-size: cover;
@@ -56,7 +52,7 @@ body {
 
 .search-bar {
     display: inline-flex;
-    border-radius: 20px;
+    border-radius: 25px;
     border-style: solid;
     border-color: rgb(189, 204, 238);            
     padding: 10px 15px;
@@ -67,8 +63,9 @@ body {
     /* box-shadow: 5px 5px 1px 2px #bed0ff; */
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
 }
-/* Header Close */
+/* ./Header */
 
+/* Content */
 main {
     overflow: auto;
     padding: 20px 60px;    
@@ -88,9 +85,7 @@ h2 {
 
 #content {
     float: left;    
-    width: 68%;         
-    display: flex;
-    flex-direction: column;        
+    width: 68%;    
 }
 
 #content > article {    
@@ -100,6 +95,49 @@ h2 {
     max-height: 200px;
 }
 
+#content p {
+    margin: 0;
+}
+.title,
+.description {
+    color: black;    
+}
+ 
+.title,
+.url,
+.description {
+    text-decoration: none;
+}
+
+.wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+}
+
+.url:hover {
+    font-size: 1.1em;
+}
+
+.pesan {
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
+/* ./Content */
+
+/* Card Effect */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;    
+}
+/* ./Card Effect */
+
+/* Aside */
 aside {
     float: right;
     width: 28%;        
@@ -108,11 +146,6 @@ aside {
 #content,
 aside {
     background-color: rgb(255, 255, 255);
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;    
 }
 
 .profile header {
@@ -124,10 +157,24 @@ aside {
 }
 
 .profile img {
-    width: 80%;
+    width: 70%;
+}
+.profile p {
+    text-align: justify;
+    line-height: 1.3em;
 }
 
+tr td:nth-child(1), td:nth-child(2) {
+    vertical-align: top;
+ }
 
+td {
+     padding: 3px 0;
+ }
+
+/* ./Aside */
+
+/* Footer */
 footer {
     bottom: 0;
     position: relative;
@@ -142,6 +189,7 @@ footer {
 footer p {
     text-align: center;
 }
+/* ./Footer */
 
 @media screen and (max-width: 550px) {
     #content,
@@ -170,11 +218,3 @@ footer p {
         min-width: 400px;
     }
 }
-
-tr td:nth-child(1), td:nth-child(2) { /* I don't think they are 0 based */
-    vertical-align: top;
- }
-
-td {
-     padding: 3px 0;
- }
