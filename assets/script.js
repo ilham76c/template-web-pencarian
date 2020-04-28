@@ -1,3 +1,5 @@
+// Data article
+
 const article = {
     'css' : { 
         title : 'Cascading Style Sheets',
@@ -20,8 +22,9 @@ const article = {
         description : 'TypeScript adalah bahasa pemrograman open-source yang dikembangkan dan dikelola oleh Microsoft. Ini adalah superset sintaksis ketat dari JavaScript dan menambahkan pengetikan statis opsional ke bahasa tersebut. TypeScript dirancang untuk pengembangan aplikasi besar dan transkompilasi ke JavaScript.'
     }
 };
+// ./Data article
 
-
+// Mencetak html dengan data di article
 function factory(key) {     
     console.log(article[key]);
     if (article[key] != undefined) {
@@ -39,7 +42,9 @@ function factory(key) {
     }
     return '';
 }
+// ./Mencetak html dengan data di article
 
+// Function onclick
 function cari($this) {
     var value = $this.previousElementSibling.value;                
     var key = value.trim().split(/\s+/);
@@ -51,3 +56,12 @@ function cari($this) {
     console.log(s);
     content.innerHTML = s;    
 }
+// ./Function onclick
+
+// code agar user bisa mengklik button cari dengan tombol 'ENTER'
+var input = document.getElementById('input-search');
+input.addEventListener('keyup', function(event){
+    if (event.keyCode === 13) {
+        document.getElementById('btn-search').click();
+    }
+});

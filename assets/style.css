@@ -32,11 +32,10 @@ body {
     background-repeat: no-repeat;    
     background-size: cover;    
     margin: auto;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.logo {
-    
+.logo {    
     height: 70px;    
 }
 
@@ -85,7 +84,7 @@ h2 {
 
 #content {
     float: left;    
-    width: 68%;    
+    width: 67%;    
 }
 
 #content > article {    
@@ -98,6 +97,7 @@ h2 {
 #content p {
     margin: 0;
 }
+
 .title,
 .description {
     color: black;    
@@ -140,7 +140,7 @@ h2 {
 /* Aside */
 aside {
     float: right;
-    width: 28%;        
+    width: 29%;        
 }
 
 #content,
@@ -152,26 +152,34 @@ aside {
     text-align: center;
 
 }
+
 .profile figure {
     margin: auto;    
 }
 
 .profile img {
-    width: 70%;
+    width: 60%;
 }
+
 .profile p {
     text-align: justify;
     line-height: 1.3em;
+    margin: 0 10px;
 }
 
 tr td:nth-child(1), td:nth-child(2) {
-    vertical-align: top;
- }
-
+    vertical-align: top;    
+}
+tr td:nth-child(3) {
+    word-break: break-word;
+}
 td {
-     padding: 3px 0;
- }
+     padding: 3px 0;          
+}
 
+table {
+    padding: 0 10px;
+}
 /* ./Aside */
 
 /* Footer */
