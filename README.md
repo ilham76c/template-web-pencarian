@@ -10,4 +10,4 @@ Berikut adalah teknologi yang digunakan dalam membangun aplikasi ini:
 
 ## Release
 URL untuk akses aplikasi: 
-[Template Web Pencarian](https://ilham76c.github.io/fe-web-pencarian/)
+[Template Web Pencarian](https://ilham76c.github.io/template-web-pencarian/)
