@@ -1,5 +1,5 @@
 ## Deskripsi
-Aplikasi ini merupakan web statis yang dibangun untuk memenuhi syarat kelulusan kelas Front-End Developer di Dicoding. Aplikasi ini memiliki kegunaan seperti search engine yaitu menampilkan data berdasarkan teks yang dimasukkkan pada form pencarian. Namun, karena web ini masih berupa web statis, kata kunci/keyword yang bisa digunakan untuk melakukan pencarian hanyalah (HTML, CSS, JAVASCRIPT dan TYPESCRIPT). Anda bisa memasukkan salah satu kata atau semua kata dengan spasi sebagai pemisah pada form pencarian.
+Aplikasi ini merupakan web statis yang berfungsi seperti search engine, yaitu menampilkan data berdasarkan teks yang dimasukkkan pada form pencarian. Namun, karena web ini masih berupa web statis, kata kunci/keyword yang bisa digunakan untuk melakukan pencarian hanyalah (HTML, CSS, JAVASCRIPT dan TYPESCRIPT). Anda bisa memasukkan salah satu kata atau semua kata dengan spasi sebagai pemisah pada form pencarian.
 
 ## Fitur
 - Aplikasi ini menampilkan data berdasarkan kata yang dimasukkan pada form pencarian.
